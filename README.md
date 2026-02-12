@@ -109,7 +109,9 @@ Tracepoint noyau (syscalls)
 ↓   
 Affichage en temps réel   
 
-
+<p align="center">
+  <img src="01_execve_obervation_strace.png" width="900">
+</p>
 
 ---      
 
