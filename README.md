@@ -159,6 +159,12 @@ OPEN: /etc/passwd
 OPEN: /home/pentester/.Xauthority   
 OPEN: /proc/self/cmdline   
 
+<p align="center">
+  <img src="bpftrace_openat_runtime.png" width="800">
+</p>
+
+
+
 Capture : images/bpftrace_openat.png   
 
 ⸻   
