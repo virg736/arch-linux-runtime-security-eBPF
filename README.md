@@ -1,4 +1,4 @@
-## Arch Linux Runtime Security – eBPF Monitoring Lab
+## Arch Linux Runtime Security - eBPF Monitoring Lab
 
 Kernel-level syscall monitoring using eBPF and bpftrace
 
