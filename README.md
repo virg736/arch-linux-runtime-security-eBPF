@@ -67,8 +67,7 @@ dans un cadre strictement pédagogique et expérimental.
 
 ## Présentation
 
-Ce projet démontre la surveillance du système Linux au niveau noyau     
-à l’aide de la technologie **eBPF** et de l’outil **bpftrace**.   
+Ce projet démontre la surveillance du système Linux au niveau noyau à l’aide de la technologie **eBPF** et de l’outil **bpftrace**.   
 
 Projet réalisé sur **Arch Linux (VirtualBox)** dans un environnement contrôlé et isolé.    
 Kernel-level syscall monitoring using eBPF and bpftrace
