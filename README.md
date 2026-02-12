@@ -84,10 +84,10 @@ Kernel-level syscall monitoring using eBPF and bpftrace
 
 ---  
 
-## Perspective Attaquant - Comment un système peut être infiltré   
+## Perspective attaquant - Comment un système peut être infiltré   
 
 Ce projet montre la surveillance des syscalls `execve` et `openat`.     
-Ces appels système sont souvent utilisés lors d’une intrusion.   
+Ces appels système sont fréquement observés lors d'activités malveillantes.   
 
 ### Exemple de scénario réaliste   
 
@@ -107,7 +107,7 @@ Un attaquant pourrait :
 
 En surveillant :   
 
-- L’exécution de processus inhabituels   
+- L'exécution de processus inhabituels   
 - L’accès à des fichiers sensibles   
 
 On peut détecter une activité suspecte avant qu’elle ne devienne critique.   
@@ -168,7 +168,7 @@ sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve
 
 ---
 
-Étape 3 - Monitoring des accès fichiers (openat)   
+Étape 3 - Monitoring des accès aux fichiers (openat)   
 
 sudo bpftrace -e 'tracepoint:syscalls:sys_enter_openat {   
     printf("OPEN: %s\n", str(args->filename));   
@@ -202,7 +202,7 @@ Pourquoi c’est important ?
 Les solutions modernes de sécurité (EDR, runtime security, container security)   
 utilisent eBPF pour surveiller :   
 	•	Les exécutions suspectes   
-	•	Les accès fichiers sensibles   
+	•	Les accès aux fichiers sensibles   
 	•	Les élévations de privilèges   
 	•	Les comportements anormaux   
 
@@ -212,7 +212,7 @@ Limites observées
 	•	Volume important de bruit système   
 	•	Nécessité de filtrage avancé    
 	•	Pas de corrélation d’événements    
-	•	Pas d’analyse contexte (PID, UID, parent)   
+	•	Pas d’analyse de contexte (PID, UID, parent)   
 
 ⸻   
 
@@ -232,31 +232,27 @@ Affichage en temps réel
 
 ### Étape 1 - Monitoring des exécutions (execve)
 
-sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve {
-    printf("EXEC: %s\n", str(args->filename));
-}'
+sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve {   
+    printf("EXEC: %s\n", str(args->filename));   
+}'   
 
-Exemple de sortie :
+Exemple de sortie :   
 
-EXEC: /usr/bin/ls
-EXEC: /usr/bin/whoami
-EXEC: /usr/bin/bash
+EXEC: /usr/bin/ls   
+EXEC: /usr/bin/whoami  
+EXEC: /usr/bin/bash   
 
+## Étape 2 - Filtrage ciblé
 
-Capture : images/bpftrace_execve.png
-
-
-Étape 2 — Filtrage ciblé
-
-sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve
-/ str(args->filename) == "/usr/bin/ls" /
-{
-    printf("User executed: %s\n", str(args->filename));
-}'
+sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve  
+/ str(args->filename) == "/usr/bin/ls" /  
+{  
+    printf("User executed: %s\n", str(args->filename));  
+}'  
 
 Capture : images/bpftrace_filtered.png
 
-Étape 3 — Monitoring des accès fichiers (openat)
+## Étape 3 - Monitoring des accès fichiers (openat)
 
 sudo bpftrace -e 'tracepoint:syscalls:sys_enter_openat {
     printf("OPEN: %s\n", str(args->filename));
