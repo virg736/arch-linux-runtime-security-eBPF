@@ -62,7 +62,49 @@ Projet réalisé sur **Arch Linux (VirtualBox)** dans un environnement contrôl�
 - **eBPF** (Extended Berkeley Packet Filter)
 - **Tracepoints noyau Linux** (`sys_enter_execve`, `sys_enter_openat`)
 
-—-
+—--
+
+## Perspective Attaquant – Comment un système peut être infiltré
+
+Ce projet montre la surveillance des syscalls `execve` et `openat`.  
+Ces appels système sont souvent utilisés lors d’une intrusion.
+
+### Exemple de scénario réaliste
+
+Un attaquant pourrait :
+
+- Obtenir un accès initial (phishing, mot de passe faible, service exposé)
+- Exécuter un binaire malveillant (`execve`)
+- Lire des fichiers sensibles (`openat`)
+  - `/etc/passwd`
+  - `/etc/shadow`
+  - clés SSH
+- Installer une persistance (cron, service systemd)
+
+### Pourquoi ce projet est pertinent
+
+En surveillant :
+
+- L’exécution de processus inhabituels
+- L’accès à des fichiers sensibles
+
+On peut détecter une activité suspecte avant qu’elle ne devienne critique.
+
+---
+
+## Architecture
+
+Espace utilisateur
+↓
+bpftrace
+↓
+Programme eBPF
+↓
+Tracepoint noyau (syscalls)
+↓
+Affichage en temps réel
+
+---
 
 
 
