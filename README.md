@@ -1,4 +1,14 @@
-
+<p align="center">
+  <img src="https://img.shields.io/badge/OS-Linux-black?logo=linux" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Arch_Linux-1793D1?logo=arch-linux&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/eBPF-kernel-blue" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/build-passing-brightgreen" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/license-MIT-green" />
+</p>
 
 <h1 align="center">
   Arch Linux Runtime Security - eBPF Monitoring Lab
