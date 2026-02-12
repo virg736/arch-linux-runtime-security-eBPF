@@ -108,6 +108,10 @@ On peut détecter une activité suspecte avant qu’elle ne devienne critique.
   <img src="./00_validation_environnement.png" width="900">
 </p>
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/virg736/arch-linux-runtime-security-eBPF/main/00_validation_environnement.png" width="900">
+</p>
+
 
 Espace utilisateur   
 ↓   
