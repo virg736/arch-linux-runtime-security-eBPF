@@ -101,6 +101,10 @@ On peut détecter une activité suspecte avant qu’elle ne devienne critique.
 
 ---   
 
+<p align="center">
+  <img src="00_validation_environnement.png" width="900">
+</p>
+
 ## Validation de l’environnement
 
 Espace utilisateur   
