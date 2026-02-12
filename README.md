@@ -103,6 +103,13 @@ On peut détecter une activité suspecte avant qu’elle ne devienne critique.
 
 ## Validation de l’environnement
 
+<p align="center">
+  
+![](00_validation_environnement.png)
+
+</p>
+
+
 Espace utilisateur   
 ↓   
 bpftrace   
