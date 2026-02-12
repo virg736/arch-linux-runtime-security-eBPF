@@ -190,7 +190,7 @@ OPEN: /proc/self/cmdline
 
 Ce projet a été conçu dans un objectif pédagogique et de compréhension des mécanismes eBPF sous Linux.
 
-Dans un second temps, il pourra évoluer vers une approche plus avancée du monitoring runtime et de la détection comportementale.
+A terme, il pourra évoluer vers une approche plus avancée du monitoring runtime et de la détection comportementale.
 
 ### 🔎 Améliorations possibles
 
