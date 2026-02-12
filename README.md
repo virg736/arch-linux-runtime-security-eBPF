@@ -15,8 +15,6 @@ Reproduction interdite sans autorisation préalable.<br>
 Usage pédagogique uniquement.
 </p>
 
-Kernel-level syscall monitoring using eBPF and bpftrace
-
 ---
 
 Ce projet a été réalisé dans un environnement contrôlé et isolé 
