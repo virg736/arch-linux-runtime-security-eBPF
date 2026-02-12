@@ -229,7 +229,7 @@ Ce projet est destiné exclusivement à des fins pédagogiques, notamment dans l
 - de tests d’intrusion légaux (pentest),
 - d’analyses réseau dans un environnement contrôlé.
 
-Ce depot a pour objectif la compréhension des mécanismes internes de linux et des techniques de détection.
+Ce dépôt a pour objectif la compréhension des mécanismes internes de Linux et des techniques de détection.
 
 ⚠️ L’auteure n’autorise en aucun cas l'utilisation de ce projet à des fins illégales ou malveillantes.
 Toute utilisation non conforme est interdite et relève uniquement de la responsabilité de l’utilisateur.
