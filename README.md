@@ -143,10 +143,9 @@ sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve
 
 <p align="center">
   <img src="execve-tracing-ebpf.png" width="900">
-</p>
+</p> 
 
-
-Capture : images/bpftrace_filtered.png   
+---
 
 Étape 3 - Monitoring des accès fichiers (openat)   
 
