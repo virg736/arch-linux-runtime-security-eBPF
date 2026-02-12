@@ -163,10 +163,6 @@ OPEN: /proc/self/cmdline
   <img src="bpftrace_openat_runtime.png" width="800">
 </p>
 
-
-
-Capture : images/bpftrace_openat.png   
-
 ⸻   
 
 Concepts abordés    
