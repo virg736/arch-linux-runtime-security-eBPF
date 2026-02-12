@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="linux_runtime_security_ebpf_cover.jpg" width="600">
+</p>
+
 ## Arch Linux Runtime Security - eBPF Monitoring Lab
 
 Kernel-level syscall monitoring using eBPF and bpftrace
