@@ -32,3 +32,38 @@ Kernel-level syscall monitoring using eBPF and bpftrace
 | 4 | IA comme adversaire | ⚪ À venir |
 
 ---
+
+# Linux Runtime Security – Lab eBPF
+
+## Présentation
+
+Ce projet démontre la surveillance du système Linux au niveau noyau  
+à l’aide de la technologie **eBPF** et de l’outil **bpftrace**.
+
+Projet réalisé sur **Arch Linux (VirtualBox)** dans un environnement contrôlé et isolé.
+
+---
+
+## Objectifs
+
+- Comprendre le fonctionnement des syscalls Linux
+- Observer en temps réel l’exécution de processus (`execve`)
+- Surveiller les accès fichiers (`openat`)
+- Attacher un programme eBPF à des tracepoints noyau
+- Comprendre les bases de la détection comportementale
+
+---
+
+## Outils et technologies
+
+- **Arch Linux** (Kernel récent, environnement minimaliste)
+- **Oracle VirtualBox** (Isolation système contrôlée)
+- **bpftrace** (Frontend eBPF basé sur BCC)
+- **eBPF** (Extended Berkeley Packet Filter)
+- **Tracepoints noyau Linux** (`sys_enter_execve`, `sys_enter_openat`)
+
+—-
+
+
+
+
