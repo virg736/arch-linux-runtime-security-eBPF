@@ -71,7 +71,7 @@ Projet réalisé sur **Arch Linux (VirtualBox)** dans un environnement contrôl�
 
 ---  
 
-## Perspective Attaquant – Comment un système peut être infiltré   
+## Perspective Attaquant - Comment un système peut être infiltré   
 
 Ce projet montre la surveillance des syscalls `execve` et `openat`.     
 Ces appels système sont souvent utilisés lors d’une intrusion.   
@@ -97,19 +97,19 @@ En surveillant :
 
 On peut détecter une activité suspecte avant qu’elle ne devienne critique.   
 
----
+---   
 
-Espace utilisateur
-↓
-bpftrace
-↓
-Programme eBPF
-↓
-Tracepoint noyau (syscalls)
-↓
-Affichage en temps réel
+Espace utilisateur   
+↓   
+bpftrace   
+↓   
+Programme eBPF   
+↓   
+Tracepoint noyau (syscalls)   
+↓   
+Affichage en temps réel   
 
----  
+---      
 
 ## Implémentation      
 
