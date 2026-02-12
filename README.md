@@ -109,6 +109,11 @@ Tracepoint noyau (syscalls)
 ↓   
 Affichage en temps réel   
 
+<p align="center">
+  <img src="execve-tracing-ebpf.png" width="850">
+</p>
+
+
 ---      
 
 ## Implémentation      
