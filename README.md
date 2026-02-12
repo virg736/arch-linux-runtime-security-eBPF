@@ -103,6 +103,8 @@ On peut détecter une activité suspecte avant qu’elle ne devienne critique.
 
 ## Validation de l’environnement
 
+![](00_validation_environnement.png)
+
 <p align="center">
   <img src="./00_validation_environnement.png" width="800"/>
 </p>
