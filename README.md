@@ -191,9 +191,8 @@ Affichage en temps réel
 
 ## Implémentation
 
-### Étape 1 — Monitoring des exécutions (execve)
+### Étape 1 - Monitoring des exécutions (execve)
 
-```bash
 sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve {
     printf("EXEC: %s\n", str(args->filename));
 }'
