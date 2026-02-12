@@ -5,8 +5,6 @@
   &nbsp;
   <img src="https://img.shields.io/badge/eBPF-kernel-blue" />
   &nbsp;
-  <img src="https://img.shields.io/badge/build-passing-brightgreen" />
-  &nbsp;
   <img src="https://img.shields.io/badge/license-MIT-green" />
 </p>
 
