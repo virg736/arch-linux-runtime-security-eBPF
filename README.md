@@ -277,7 +277,9 @@ Ce projet est destiné exclusivement à des fins pédagogiques, notamment dans l
 - de tests d’intrusion légaux (pentest),
 - d’analyses réseau dans un environnement contrôlé.
 
-⚠️ L’auteure ne cautionne ni n’autorise l’utilisation de ce script en dehors d’un cadre légal strictement défini.
+Ce depot a pour objectif la compréhension des mécanismes internes de linux et des techniques de détection.
+
+⚠️ L’auteure n’autorise en aucun cas l'utilisation de ce projet à des fins illégales ou malveillantes.
 Toute utilisation non conforme est interdite et relève uniquement de la responsabilité de l’utilisateur.
 
 ## Droits sur les visuels
