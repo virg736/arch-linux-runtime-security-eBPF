@@ -140,6 +140,12 @@ sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve
     printf("User executed: %s\n", str(args->filename));   
 }'   
 
+
+<p align="center">
+  <img src="execve-tracing-ebpf.png" width="900">
+</p>
+
+
 Capture : images/bpftrace_filtered.png   
 
 Étape 3 - Monitoring des accès fichiers (openat)   
