@@ -2,6 +2,13 @@
 
 Kernel-level syscall monitoring using eBPF and bpftrace
 
+---
+
+Ce projet a été réalisé dans un environnement contrôlé et isolé 
+(Arch Linux sous VirtualBox), 
+dans un cadre strictement pédagogique et expérimental.
+
+
 ## Sommaire
 
 - [Avancement global du portfolio](#avancement-global-du-portfolio)
