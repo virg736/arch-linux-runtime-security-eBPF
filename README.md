@@ -130,13 +130,7 @@ EXEC: /usr/bin/bash
   <img src="bpftrace.png" width="800">
 </p>
 
-
-<p align="center">
-  <img src="images/bpftrace_execve.png" width="800">
-</p>
-
-Capture : images/bpftrace_execve.png   
-
+---
 
 Étape 2 - Filtrage ciblé   
 
