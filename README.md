@@ -125,6 +125,10 @@ EXEC: /usr/bin/ls
 EXEC: /usr/bin/whoami   
 EXEC: /usr/bin/bash   
 
+<p align="center">
+  <img src="images/bpftrace_execve.png" width="800">
+</p>
+
 Capture : images/bpftrace_execve.png   
 
 
