@@ -186,6 +186,30 @@ OPEN: /proc/self/cmdline
 
 ⸻   
 
+## 🟢 Évolutions prévues
+
+Ce projet a été conçu dans un objectif pédagogique et de compréhension des mécanismes eBPF sous Linux.
+
+Dans un second temps, il pourra évoluer vers une approche plus avancée du monitoring runtime et de la détection comportementale.
+
+### 🔎 Améliorations possibles
+
+- Ajout d’un schéma explicatif du flux eBPF :
+  Espace utilisateur → Programme eBPF → Tracepoint noyau → Sortie utilisateur
+- Ajout d’une analyse contextuelle enrichie (PID, UID, processus parent)
+- Mise en place d’une corrélation d’événements
+- Réduction avancée du bruit système
+- Comparaison technique avec `auditd`
+- Structuration du projet sous forme d’outil plus modulaire
+
+---
+
+> ⚠️ L’objectif actuel du projet est la compréhension des mécanismes internes.
+> Les améliorations listées ci-dessus représentent des pistes d’évolution et ne constituent pas le périmètre initial.
+
+--- 
+
+
 Concepts abordés    
 	•	Syscalls Linux (execve, openat)   
 	•	Tracepoints noyau   
