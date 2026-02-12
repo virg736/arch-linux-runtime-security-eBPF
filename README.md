@@ -92,21 +92,6 @@ On peut détecter une activité suspecte avant qu’elle ne devienne critique.
 
 ---
 
-## Architecture   
-
-Espace utilisateur      
-↓  
-bpftrace  
-↓   
-Programme eBPF   
-↓   
-Tracepoint noyau (syscalls)   
-↓   
-Affichage en temps réel   
-
----   
-
-
 Espace utilisateur
 ↓
 bpftrace
@@ -117,82 +102,80 @@ Tracepoint noyau (syscalls)
 ↓
 Affichage en temps réel
 
----
+---  
 
-## Implémentation
+## Implémentation      
 
-### Étape 1 — Monitoring des exécutions (execve)
+### Étape 1 - Monitoring des exécutions (execve)   
 
-```bash
-sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve {
-    printf("EXEC: %s\n", str(args->filename));
-}'
+sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve {   
+    printf("EXEC: %s\n", str(args->filename));   
+}'   
 
-Exemple de sortie :
+Exemple de sortie :   
 
-EXEC: /usr/bin/ls
-EXEC: /usr/bin/whoami
-EXEC: /usr/bin/bash
+EXEC: /usr/bin/ls   
+EXEC: /usr/bin/whoami   
+EXEC: /usr/bin/bash   
 
-
-Capture : images/bpftrace_execve.png
+Capture : images/bpftrace_execve.png   
 
 
-Étape 2 — Filtrage ciblé
+Étape 2 - Filtrage ciblé   
 
-sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve
-/ str(args->filename) == "/usr/bin/ls" /
-{
-    printf("User executed: %s\n", str(args->filename));
-}'
+sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve    
+/ str(args->filename) == "/usr/bin/ls" /   
+{   
+    printf("User executed: %s\n", str(args->filename));   
+}'   
 
-Capture : images/bpftrace_filtered.png
+Capture : images/bpftrace_filtered.png   
 
-Étape 3 — Monitoring des accès fichiers (openat)
+Étape 3 - Monitoring des accès fichiers (openat)   
 
-sudo bpftrace -e 'tracepoint:syscalls:sys_enter_openat {
-    printf("OPEN: %s\n", str(args->filename));
-}'
+sudo bpftrace -e 'tracepoint:syscalls:sys_enter_openat {   
+    printf("OPEN: %s\n", str(args->filename));   
+}'   
 
-Exemple de sortie :
+Exemple de sortie :   
 
-OPEN: /etc/passwd
-OPEN: /home/pentester/.Xauthority
-OPEN: /proc/self/cmdline
+OPEN: /etc/passwd   
+OPEN: /home/pentester/.Xauthority   
+OPEN: /proc/self/cmdline   
 
-Capture : images/bpftrace_openat.png
+Capture : images/bpftrace_openat.png   
 
-⸻
+⸻   
 
-Concepts abordés
-	•	Syscalls Linux (execve, openat)
-	•	Tracepoints noyau
-	•	Architecture eBPF
-	•	Instrumentation dynamique
-	•	Monitoring runtime
-	•	Notion de bruit système
-	•	Détection comportementale
+Concepts abordés    
+	•	Syscalls Linux (execve, openat)   
+	•	Tracepoints noyau   
+	•	Architecture eBPF   
+	•	Instrumentation dynamique   
+	•	Monitoring runtime   
+	•	Notion de bruit système   
+	•	Détection comportementale   
 
-⸻
+⸻   
 
-Pourquoi c’est important ?
+Pourquoi c’est important ?    
 
-Les solutions modernes de sécurité (EDR, runtime security, container security)
-utilisent eBPF pour surveiller :
-	•	Les exécutions suspectes
-	•	Les accès fichiers sensibles
-	•	Les élévations de privilèges
-	•	Les comportements anormaux
+Les solutions modernes de sécurité (EDR, runtime security, container security)   
+utilisent eBPF pour surveiller :   
+	•	Les exécutions suspectes   
+	•	Les accès fichiers sensibles   
+	•	Les élévations de privilèges   
+	•	Les comportements anormaux   
 
-⸻
+⸻      
 
-Limites observées
-	•	Volume important de bruit système
-	•	Nécessité de filtrage avancé
-	•	Pas de corrélation d’événements
-	•	Pas d’analyse contexte (PID, UID, parent)
+Limites observées   
+	•	Volume important de bruit système   
+	•	Nécessité de filtrage avancé    
+	•	Pas de corrélation d’événements    
+	•	Pas d’analyse contexte (PID, UID, parent)   
 
-⸻
+⸻   
 
 
 
