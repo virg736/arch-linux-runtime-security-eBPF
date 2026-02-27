@@ -20,9 +20,7 @@
 ---
 
 <p align="center">
-© 2026 Virginie Lechene - Tous droits réservés<br>
-Reproduction interdite sans autorisation préalable.<br>
-Usage pédagogique uniquement.
+© 2026 Virginie Lechene 
 </p>
 
 ---
@@ -267,9 +265,12 @@ Ce dépôt a pour objectif la compréhension des mécanismes internes de Linux e
 ⚠️ L’auteure n’autorise en aucun cas l'utilisation de ce projet à des fins illégales ou malveillantes.
 Toute utilisation non conforme est interdite et relève uniquement de la responsabilité de l’utilisateur.
 
-## Droits sur les visuels
-Les visuels, illustrations ou captures présents dans ce dépôt sont la propriété exclusive de l’auteure.
-Toute reproduction ou utilisation non autorisée est interdite.
+## 📷 Droits sur les visuels
+
+Les visuels de ce dépôt sont protégés par la licence CC BY-ND 4.0.
+Attribution obligatoire – Modification interdite.
+
+© 2026 Virginie Lechene
 
 ---
 
