@@ -271,7 +271,17 @@ Toute utilisation non conforme est interdite et relève uniquement de la respons
 Les visuels, illustrations ou captures présents dans ce dépôt sont la propriété exclusive de l’auteure.
 Toute reproduction ou utilisation non autorisée est interdite.
 
+---
 
+---
+
+## 👨‍💻 Author
+
+**Virginie Lechene**  
+Cybersecurity | Pentest | Linux Security  
+
+🔗 GitHub: https://github.com/virg736  
+🔗 LinkedIn: https://linkedin.com/in/virginie-lechene-fr
 
 
 
