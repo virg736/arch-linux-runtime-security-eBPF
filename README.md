@@ -284,15 +284,6 @@ Cybersecurity • Pentest • Linux Security
 🔗 [LinkedIn](https://linkedin.com/in/virginie-lechene-fr)
 
 
----
-
-## 👨‍💻 Author
-
-**Virginie Lechene**  
-Cybersecurity | Pentest | Linux Security  
-
-🔗 GitHub: https://github.com/virg736  
-🔗 LinkedIn: https://linkedin.com/in/virginie-lechene-fr
 
 
 
