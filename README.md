@@ -273,8 +273,6 @@ Toute reproduction ou utilisation non autorisée est interdite.
 
 ---
 
----
-
 ## 👩‍💻 Author
 
 **Virginie Lechene**  
