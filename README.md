@@ -215,7 +215,7 @@ Ce projet a été conçu dans un objectif pédagogique et de compréhension des 
 
 Concepts abordés    
 	•	Syscalls Linux (execve, openat)   
-	•	Tracepoints noyau   
+	•	Tracepoints du noyau   
 	•	Architecture eBPF   
 	•	Instrumentation dynamique   
 	•	Monitoring runtime   
