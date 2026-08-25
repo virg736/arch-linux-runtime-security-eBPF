@@ -88,10 +88,10 @@ Kernel-level syscall monitoring using eBPF and bpftrace
 
 ---  
 
-## Perspective attaquant - Comment un système peut être infiltré   
+## Perspective de l' attaquant - Comment un système peut être infiltré   
 
 Ce projet montre la surveillance des syscalls `execve` et `openat`.     
-Ces appels système sont fréquement observés lors d'activités malveillantes.   
+Ces appels système sont courants sous Linux, mais leur contexte d'utilisation peut révéler une activité suspecte ou malveillante.   
 
 ### Exemple de scénario réaliste   
 
@@ -99,7 +99,7 @@ Un attaquant pourrait :
 
 - Obtenir un accès initial (phishing, mot de passe faible, service exposé)   
 - Exécuter un binaire malveillant (`execve`)   
-- Lire des fichiers sensibles (`openat`)   
+- Accéder à des fichiers sensibles (`openat`)   
   - `/etc/passwd`   
   - `/etc/shadow`   
   - clés SSH   
