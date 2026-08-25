@@ -126,7 +126,7 @@ bpftrace
 ↓   
 Programme eBPF   
 ↓   
-Tracepoint noyau (syscalls)   
+Tracepoint du noyau (syscalls)   
 ↓   
 Affichage en temps réel   
 
@@ -138,7 +138,7 @@ Affichage en temps réel
 
 ## Implémentation      
 
-### Étape 1 - Monitoring des exécutions (execve)   
+### Étape 1 - Surveillance des exécutions (execve)   
 
 sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve {   
     printf("EXEC: %s\n", str(args->filename));   
