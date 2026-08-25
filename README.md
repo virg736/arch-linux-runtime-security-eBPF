@@ -55,9 +55,6 @@ dans un cadre strictement pédagogique et expérimental.
 | Projet | Fonction | Statut |
 |--------|----------|--------|
 | 1 | Linux Runtime Monitoring (eBPF) | 🟢 Terminé |
-| 2 | Business Logic & Human Factor Lab | ⚪ À venir |
-| 3 | Tool Limitations & False Positives | ⚪ À venir |
-| 4 | IA as an Adversary | ⚪ À venir |
 
 ---
 
